@@ -2,7 +2,7 @@ package estructura;
 
 public enum Palo {
 	
-	CORAZONES('♥', "C"), DIAMANTES('♦', "D"), TREBOLE('♣', "T"), PICAS('♠', "P");
+	CORAZONES('♥', "C"), DIAMANTES('♦', "D"), TREBOLES('♣', "T"), PICAS('♠', "P");
 	
 	private Palo(char simbolo, String letraInicialPalo) {
 		

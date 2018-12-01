@@ -18,6 +18,6 @@ public class Carta {
 	public String toString() {
 		
 		String valorString = valor + "";
-		return valorString + palo.getSimbolo();
+		return valorString + palo.getLetraInicialPalo();
 	}
 }
