@@ -2,6 +2,8 @@ package estructura;
 
 public class Baraja {
 	
+	static final int VECES_INTERCAMBIO_BARAJA = 300;
+	
 	private Carta[] baraja;
 	
 	public Baraja() {
@@ -59,4 +61,16 @@ public class Baraja {
 		setCarta(posicionCarta1-1, getCarta(posicionCarta2-1));
 		setCarta(posicionCarta2-1, tmp);
 	}	
+	
+	// Intercambia numVeces las cartas de la baraja con posiciones aleatorias cada vez.
+	public void barajar() {
+		
+		for(int i = 0; i < VECES_INTERCAMBIO_BARAJA; i++) {
+			//1 a 52 porque en intercambio le restamos uno que son las posiciones del array.
+			int posicion1 = (int) (Math.random() * 52) + 1;
+			int posicion2 = (int) (Math.random() * 52) + 1;
+			
+			intercambioCartas(posicion1, posicion2);	
+		}
+	}
 }
